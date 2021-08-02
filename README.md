@@ -189,7 +189,7 @@ public class MixinSupportingBase implements IMixinSupport {
             } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
                     | InvocationTargetException | NoSuchMethodException | SecurityException e) {
                 throw new UnsupportedOperationException(
-                        "Could not instantiate mixin of type"+ clazz.getSimpleName(), e);
+                        "Could not instantiate mixin of type "+ clazz.getSimpleName(), e);
             }
         }
         return (M) this.mixinMap.get(clazz);

@@ -2,6 +2,7 @@ package de.daedo.mixin.example;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
+import java.util.function.Supplier;
 
 import de.daedo.mixin.base.IMixinSupport;
 import de.daedo.mixin.base.Mixin;
@@ -34,7 +35,7 @@ public class MixinSupportingBase implements IMixinSupport {
 			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
 					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
 				throw new UnsupportedOperationException(
-						"Could not instantiate mixin of type"+ clazz.getSimpleName(), e);
+						"Could not instantiate mixin of type "+ clazz.getSimpleName(), e);
 			}
 		}
 		return (M) this.mixinMap.get(clazz);
