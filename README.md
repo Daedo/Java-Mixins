@@ -1,5 +1,5 @@
 # Java-Mixins
-[Mixins](https://en.wikipedia.org/wiki/Mixin) are a really useful tool to have. They allow you to basically insert a pre-defined snippit of functionality to any class. 
+[Mixins](https://en.wikipedia.org/wiki/Mixin) are a really useful tool to have. They allow you to basically insert a pre-defined snippet of functionality to any class. 
 Due to the lack of multi-inheritance or interfaces with fields, Java doesn't natively support mixins on the same level as other languages.  However we can use interfaces and default methods to create something similar with only minimal boilerplate.
  
 # Going beyond the interface
