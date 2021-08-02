@@ -18,7 +18,7 @@ public interface ITalk {
     }
 }
 ```
-This interface should provide the capability of a `talk` method that prints a pre-defined message. This message should be accessible using a getter and setter. Unfortunately due to the lack of local variables the implementation of the getter, setter and local field has to be done by the user.  While we could turn this interface into an abstract class, but this would defeat our purpose since we can only extend one class and want to be able to add arbitrarily many mixins. What we would need is a way for an interface to store arbitrary data in its class.
+This interface should provide the capability of a `talk` method that prints a pre-defined message. This message should be accessible using a getter and setter. Unfortunately due to the lack of local variables the implementation of the getter, setter and local field has to be done by the user.  While we could turn this interface into an abstract class, this would defeat our purpose since we can only extend one class and want to be able to add arbitrarily many mixins. What we would need is a way for an interface to store arbitrary data in its class.
 
 # Interfaces with state
 Consider this class implementation of the same interface: 
